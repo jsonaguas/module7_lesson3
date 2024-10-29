@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Form</title>
+</head>
+<body>
+	<header>
+		<h1>HTML Form</h1>
+	</header>
+	<main>
+		<form action="/submit-email" method="post">
+			<label for="email">Email:</label>
+			<br><input type="email" id="email" name="email" placeholder="john@example.com" required
+				pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address.">
+			<br><br>
+			<button type="submit">Submit Email</button>
+		</form>
+		<br>
+
+		<form action="/submit-quantity" method="post">
+			<label for="quantity">Quantity:</label>
+			<br><input type="number" id="quantity" name="quantity" placeholder="#" min="1" max="10" step="1" required>
+			<br><br>
+			<button type="submit">Submit Quantity</button>
+		</form>
+		<br>
+
+		<form action="/submit-date" method="post">
+			<label for="date">Date:</label>
+			<br><input type="date" id="date" name="date" placeholder="mm/dd/yyyy" required>
+			<br><br>
+			<button type="submit">Submit Date</button>
+		</form>
+		<br>
+
+		<form action="/submit-range" method="post">
+			<label for="range">Range (0-10):</label>
+			<br><input type="range" id="range" name="range" min="0" max="10">
+			<br><br>
+			<button type="submit">Submit Range</button>
+		</form>
+	</main>
+</body>
+</html>
